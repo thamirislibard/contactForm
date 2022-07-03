@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Contato</h1>
+        <p id="subtitulo">Insira as informações para entrar em contato.</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"> Nome </label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="email"> E-mail </label>
+            <input type="email" nome="email" id="email" required>
+        </div>
+        
+        <div class="campo">
+            <label for="mensagem"> Mensagem </label>
+            <textarea name="mensagem" id="mensagem" rows="6" style="width: 26em"></textarea>
+        </div>
+
+        <div class="campo">
+            <label>Você gostaria de receber informações extras via e-mail? </label>
+            <label>
+            <input type="radio" name="permitir" value="sim" checked>Sim
+            </label>
+
+            <label>
+                <input type="radio" name="nao_permitir" value="nao">Não
+            </label>
+        </div>
+        
+        <fieldset class="grupo">
+            <label>Você nos acompanha? Se sim, como?</label><br>
+
+            <div id="check">
+                <input type="checkbox" id="opçao1" name="opção1" value="Redes Sociais">
+                <label for="opçao1"> Redes Sociais </label>
+                <input type="checkbox" id="opçao2" name="opção2" value="Google">
+                <label for="opçao2"> Google </label>
+                <input type="checkbox" id="opçao3" name="opção3" value="Outros">
+                <label for="opçao3">Outros</label>
+                <input type="text" name="opçao3" id="opçao3">
+            </div>
+        </fieldset>
+
+        <button class="botao" type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
